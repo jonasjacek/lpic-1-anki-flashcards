@@ -22,8 +22,8 @@ Property | Value
 Language | English
 Number of cards | 1474
 Number of images | 35
-Completed cards for LPIC-1 exam 101 topics | 101.1, 101.2, 101.3, 102.1, 102.2, 102.3, 102.4, 102.5, 103.1, 103.2, 103.3, 103.4, 103.5, 103.6, 103.7, 103.8, 104.1, 104.2, 104.3, 104.4, 104.5, 104.6, 104.7
-Completed cards for LPIC-1 exam 102 topics | 0
+Completed exam 101 topics | 101.1, 101.2, 101.3, 102.1, 102.2, 102.3, 102.4, 102.5, 103.1, 103.2, 103.3, 103.4, 103.5, 103.6, 103.7, 103.8, 104.1, 104.2, 104.3, 104.4, 104.5, 104.6, 104.7
+Completed exam 102 topics | 0
 
 ## Topics
 
