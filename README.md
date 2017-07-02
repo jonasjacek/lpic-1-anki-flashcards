@@ -20,10 +20,10 @@ As an alternative to the download from GitHub, you can download and/or import an
 Property | Value
 ------------ | -------------
 Language | English
-Number of cards | 1527
-Number of images | 37
+Number of cards | 1546
+Number of images | 38
 Completed exam 101 topics | 101.1, 101.2, 101.3, 102.1, 102.2, 102.3, 102.4, 102.5, 103.1, 103.2, 103.3, 103.4, 103.5, 103.6, 103.7, 103.8, 104.1, 104.2, 104.3, 104.4, 104.5, 104.6, 104.7
-Completed exam 102 topics | 0
+Completed exam 102 topics | 105.1
 
 ## Topics
 
@@ -47,7 +47,7 @@ Topics and sub-topics are tagged according to the LPIC-1 exam 101 outline.
 Topics and sub-topics are tagged according to the LPIC-1 exam 102 outline.
 
 - 105 - Shells, Scripting and Data Management  
-  <sup>**See tags:** work in progress</sup>
+  <sup>**See tags:** 105.1</sup>
 - 106 - Interfaces and Desktops  
   <sup>**See tags:** work in progress</sup>
 - 107 - Administrative Tasks  
