@@ -47,7 +47,7 @@ Topics and sub-topics are tagged according to the LPIC-1 exam 101 outline.
 Topics and sub-topics are tagged according to the LPIC-1 exam 102 outline.
 
 - 105 - Shells, Scripting and Data Management  
-  <sup>**See tags:** 105.1</sup>
+  <sup>**See tags:** 105.1, 105.2</sup>
 - 106 - Interfaces and Desktops  
   <sup>**See tags:** work in progress</sup>
 - 107 - Administrative Tasks  
