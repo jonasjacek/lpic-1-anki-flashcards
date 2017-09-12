@@ -20,8 +20,8 @@ As an alternative to the download from GitHub, you can download and/or import an
 Property | Value
 ------------ | -------------
 Language | English
-Number of cards | 1715
-Number of images | 51
+Number of cards | 1720
+Number of images | 55
 Completed exam 101 topics | 101.1, 101.2, 101.3, 102.1, 102.2, 102.3, 102.4, 102.5, 103.1, 103.2, 103.3, 103.4, 103.5, 103.6, 103.7, 103.8, 104.1, 104.2, 104.3, 104.4, 104.5, 104.6, 104.7
 Completed exam 102 topics | 105.1, 105.2
 
