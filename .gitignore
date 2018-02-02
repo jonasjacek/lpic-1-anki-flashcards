@@ -1,5 +1,8 @@
 # various
 
+# temp files
+*~
+
 # vim
 *.bak
 *.swp
