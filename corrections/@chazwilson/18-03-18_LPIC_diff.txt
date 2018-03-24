@@ -1,0 +1,644 @@
+11c11
+< What is the difference between the commands 'exit' and 'logout'?	'exit' exits any shell.<div>'logout' exits only login-shells.</div>	105 105.1 edit
+---
+> What is the difference between the commands 'exit' and 'logout'?	'exit' exists any shell.<div>'logout' exists only login-shells.</div>	105 105.1
+35c35
+< What are examples of block devices? [3]	<div>- floppy disk drives</div><div>- hard drives</div><div>- CD-ROM drives</div>	101 101.1 edit
+---
+> What are examples of block devices? [3]	<div>- diskette drives</div><div>- hard drives</div><div>- CD-ROM drives</div>	101 101.1
+41c41
+< What are the 2 regular file types and their corresponding characters (as displayed by ls)&nbsp;in Linux?	<div>- = regular file</div><div>d = directory file</div>	101 101.1 edit
+---
+> What are the 2 regular file types&nbsp;(and their corresponding characters)&nbsp;in Linux?	<div>- = regular file</div><div>d = directory file</div>	101 101.1
+52c52
+< What does <i>modprobe</i> do?	It allows adding and removing modules to/from the kernel.	101 101.1 edit
+---
+> What does <i>modprobe</i> do?	It allows to add and remove modules to/from the kernel.	101 101.1
+56,57c56,57
+< 2 locations (1 directory and 1 file) where one can lookup which modules are loaded into the Kernel?	/sys/module/<div>/proc/modules </div>	101 101.1 leech
+< Command to lookup driver information&nbsp;for sda1?	$stat /sys/block/sda/sda1/	101 101.1 Marked edit
+---
+> 2 locations (1 directory and 1 file) where one can lookup which modules are loaded into the Kernel?	/sys/module/<div>/proc/modules </div>	101 101.1
+> Command to lookup driver information&nbsp;for sda1?	$more stat /sys/block/sda/sda1/	101 101.1
+61c61
+< Command to query and configure PCI devices?	$ setpci	101 101.1 leech
+---
+> Command to query and configure PCI devices?	$ setpci	101 101.1
+69c69
+< Location, where detailed information on the CPU can be obtained from?	cat /proc/cpuinfo	101 101.1 edit
+---
+> Location, where detailed information on the CPU can be obtained from?	/proc/cpuinfo	101 101.1
+94c94
+< In general, what is the difference/connection between procfs and sysfs?	<div>Procfs and sysfs do the same thing, but sysfs is newer and a little bit more structured.</div>	101 101.1 edit
+---
+> In general, what is the difference/connection between procfs and sysfs?	<div>Procfs and sysfs do the same, but sysfs is newer and a little bit more structured.</div>	101 101.1
+97c97
+< What is firmware (e.g. BIOS)?	Firmware is a low-level software which begins the OS's boot process and configures certain hardware devices.	101 101.1
+---
+> What is firmware?	Firmware is a low-level software which begins the OS's boot process and configures certain hardware devices.	101 101.1
+113c113
+< What does a traditional hard disk layout look like?	"- a fixed number of read/write heads (C) and platters (A).<div>- each head marks out a circular track (E) on its platter.&nbsp;</div><div>- tracks are broken into sectors (F).&nbsp;<div>- the tracks collectively make up a cylinder.</div><div><br /></div><div><img src=""chs.png"" /></div><div>(Wikimedia Commons)</div></div>"	101 101.1 edit
+---
+> How does a traditional hard disk layout look like?	"- a fixed number of read/write heads (C) and platters (A).<div>- each head marks out a circular track (E) on its platter.&nbsp;</div><div>- tracks are broken into sectors (F).&nbsp;<div>- the tracks collectively make up a cylinder.</div><div><br /></div><div><img src=""chs.png"" /></div><div>(Wikimedia Commons)</div></div>"	101 101.1
+133c133
+< Name two commands for removing kernel modules.	$ rmmod<div><br /></div><div>and</div><div><br /><div>$ modprobe -r</div></div>	101 101.1 edit
+---
+> Name two for removing kernel modules.	$ rmmod<div><br /></div><div>and</div><div><br /><div>$ modprobe -r</div></div>	101 101.1
+138,139c138,139
+< What is the Industry Standard Architecture (ISA)?	A data transfer standard for the internal bus in PCs.	101 101.1 edit
+< Which are 4 common hard disk interfaces on modern computers?	- Universal Serial Bus (USB)<br>- Parallel Advanced Technology Attachment (PATA)<div>- Serial Advanced Technology Attachment ((S)ATA)</div><div>- Small Computer System Interface (SCSI)</div>	101 101.1 edit
+---
+> What is the Industry Standard Architecture (ISA)?	A data transfer standard	101 101.1
+> Which are 3 common hard disk interfaces on modern computers?	- Universal Serial Bus (USB)<br>- Parallel Advanced Technology Attachment (PATA)<div>- Serial Advanced Technology Attachment ((S)ATA)</div><div>- Small Computer System Interface (SCSI)</div>	101 101.1
+154c154
+< What does the SCSI naming system look like for DVD-ROMs?	/dev/scd0, /dev/scd1, ...etc.	101 101.1 edit
+---
+> How does the SCSI naming system look like for DVD-ROMs?	/dev/scd0, /dev/scd1, ...etc.	101 101.1
+161c161
+< What is the command to inspect the range of memory addresses a certain piece of hardware is using?	$ cat /proc/ioports	101 101.1 edit
+---
+> Command to inspect the range of memory addresses a certain piece of hardware is using?	$ cat /proc/ioports	101 101.1
+163c163
+< How are the firmware (e.g. BIOS), the boot loader and the OS connected?	- The firmware reads the boot loader into memory from the hard disk and executes it.<div>- The boot loader loads the Linux kernel into the memory and starts it running.</div>	101 101.2 edit
+---
+> How do firmware, boot loader and OS are connected?	- The firmware reads the boot loader into memory from the hard disk and executes it.<div>- The boot loader loads the Linux kernel into the memory and starts it running.</div>	101 101.2
+167c167
+< How are daemon processes traditionally identified (named)?	<div>Traditionally,&nbsp;process names of a daemon end with the letter d.</div>	101 101.1
+---
+> How are daemon processes traditionally identified (naming)?	<div>Traditionally,&nbsp;process names of a daemon end with the letter d.</div>	101 101.1
+173c173
+< What are examples of&nbsp;operating systems that use a Microkernel? [3]	<div>- Mac OS X</div><div>- GNU HURD</div><div>- Minix</div>	101 101.1
+---
+> What are examples of&nbsp;operating systems that use a Microkernel? [3]	<div>- Symbian</div><div>- Mac OS X</div><div>- GNU HURD</div><div>- Minix</div>	101 101.1
+175c175
+< Where are kernel modules loaded to/unloaded from with <i>insmod</i> and <i>rmmod</i> (in a general sense)?&nbsp;	random access memory (RAM)	101 101.1 edit
+---
+> Where are kernel modules loaded to/unloaded from with <i>insmod</i> and <i>rmmode</i>?&nbsp;	From random access memory.&nbsp;	101 101.1
+180c180
+< Option to use with <i>depmod</i>&nbsp;to check if any modules are newer than the ones listed in modules.dep file?	<div>$ depmod -A</div><div><br /></div><div>or&nbsp;</div><div><br /></div><div>$ depmod --quick</div>	101 101.1 edit
+---
+> Option to use with <i>depmod</i>&nbsp;to check if any modules are newer than the ones listed in modules.dep file?	<div>$ depmod -A</div><div><br /></div><div>or&nbsp;</div><div><br /></div><div>$ depmod --quick</div>	101 101.1
+185c185
+< What is a logical drive?	A logical drive is a separate partition,  that is logically created on top of a physical hard disk drive.	101 101.1 Marked
+---
+> What is a logical drive?	A logical drive is a separate partition,  that is logically created on top of a physical hard disk drive.	101 101.1
+192c192
+< Can extended partitions be used directly?	No, they act as containers for logical partitions.	101 101.1 Marked
+---
+> Can extended partitions be used directly?	No, they act as containers for logical partitions.	101 101.1
+213c213
+< What is the location and name of the initial RAM filesystem (initramfs) file?	/boot/initrd.img<div><br /></div><div>e.g. /boot/initrd.img-4.9.0-4-amd64</div>	101 101.2 Marked edit
+---
+> What is the location and file that is the initial RAM filesystem (initramfs)?	/boot/initrd.img	101 101.2
+226c226
+< Where are .efi files located?	/boot/efi/*	101 101.2 Marked
+---
+> Where are .efi files located?	/boot/efi/*	101 101.2
+228,229c228,229
+< Alternative name and location for grub.conf on some systems?	/boot/grub/menu.lst	101 101.2 Marked
+< Describe the process to provide common commands to the boot loader at boot time (5 steps).	- stop the boot process by using the arrows in the boot menu<div>- select a menu option</div><div>- press E (edit)</div><div>- change boot menu setting</div><div>- press ctrl+X to resume boot.</div>	101 101.2 Marked edit
+---
+> Alternative name and location for grub.conf on some systems?	/boot/grub/menu.lst	101 101.2
+> Describe the process to provide common commands to the boot loader at boot time (5 steps).	- stop the boot process by using the arrows in the boot menu<div>- select a menu option</div><div>- press E (edit)</div><div>- change boot menu setting</div><div>- press Strg+X to resume boot.</div>	101 101.2
+235c235
+< What does runlevel 2 represent?	2 - Multiple users, no NFS (network filesystem); rarely used.	101 101.3 edit
+---
+> What does runlevel 2 represent?	2 - Multiple users, no NFS (network filesystem); also used rarely.	101 101.3
+254c254
+< What does&nbsp;<i>respawn </i>in inittab mean?	Respawn means it 'starts the process and restarts it when it dies'.	101 101.3 edit
+---
+> What does&nbsp;<i>respawn </i>in inittab stand for?	Respawn stands for 'starts the process and restarts it when it dies'.	101 101.3
+259c259
+< Command to have <i>init</i> re-read/reload the inittab configuration?	telinit q<div><br /></div><div>sudo telinit q</div>	101 101.3 edit
+---
+> Command to have <i>init</i> re-read/reload the inittab configuration?	telinit q	101 101.3
+264c264
+< How to send a SIGHUP to an <i>init</i> program&nbsp;(not <i>upstart</i> or <i>systemd</i>)?	Use the 'reload' parameter with /etc/init.d/&lt;program&gt;.<div><br /></div><div>e.g.:&nbsp;</div><div>/etc/init.d/apache2 reload</div>	101 101.3 edit
+---
+> How to send a SIGHUP to an <i>init</i> program&nbsp;(not <i>upstart</i> or <i>systemd</i>)?	Add the 'reload' parameter to /etc/init.d/&lt;program&gt;.<div><br></div><div>e.g.:&nbsp;</div><div>/etc/init.d/apache2 reload</div>	101 101.3
+270c270
+< What can be retrieved from the following file information?&nbsp;<i>K12reboot -&gt; ../init.d/reboot in /etc/rc6.d/?</i>	<div>K12reboot is an <i>init</i> kill (K) softlink (-&gt;) to /init.d/reboot, which will run at position 12 by <i>init</i>.</div>	101 101.3 Marked
+---
+> What can be retrieved from the following file information?&nbsp;<i>K12reboot -&gt; ../init.d/reboot in /etc/rc6.d/?</i>	<div>K12reboot is an <i>init</i> kill (K) softlink (-&gt;) to /init.d/reboot, which will run at position 12 by <i>init</i>.</div>	101 101.3
+273c273
+< What kind of information does&nbsp;<i>runlevel</i> print? [2]	- the current runlevel of the system (right)<div>- the previous runlevel of the system (left)</div><div><br /></div><div>$ runlevel</div><div>$ N 5</div>	101 101.3 edit
+---
+> What kind of information does&nbsp;<i>runlevel</i> print? [2]	- the current runlevel of the system (right)<div>- the previous runlevel of the system (left)</div>	101 101.3
+275c275
+< What does the first output character N indicate for <i>runlevel</i>?	<div>If the first output character is 'N', the runlevel has not been changed since the system was booted.</div><div><br /></div><div>$ runlevel</div><div>$ N 3</div>	101 101.3 edit
+---
+> What does the first output character N indicate for <i>runlevel</i>?	<div>If the first output character is 'N', the runlevel has not been changed since the system was booted.</div><div><br /></div><div>e.g.: $ runlevel</div><div>N 3</div>	101 101.3
+283c283
+< Command to power off the system at 09:45, with an added message?	"$ shutdown -h 9:45 ""message"""	101 101.3 Marked
+---
+> Command to power off the system at 09:45, with an added message?	"$ shutdown -h 9:45 ""message"""	101 101.3
+289,290c289,290
+< Location of <i>upstart</i> configuration files? [2]	/etc/init/<div>/etc/event.d</div><div><br /></div><div>NOT: /etc/inittab</div>	101 101.3 edit
+< In which ways is <i>upstart</i> different from SysVinit?	<i>Upstart</i> starts and stops tasks and services in parallel which makes it faster than the synchronous SysVinit.	101 101.3 edit
+---
+> Location of <i>upstart</i> configuration files? [2]	/etc/init<div>/etc/event.d</div><div><br /></div><div>NOT: /etc/inittab</div>	101 101.3
+> In which concept is <i>upstart</i> different from SysVinit?	<i>Upstart</i> starts and stops tasks and services parallel which makes it faster than the synchronous SysVinit.	101 101.3
+292,293c292,293
+< In which ways is <i>systemd</i> different from <i>upstart</i>?	<i>Systemd</i>, like <i>upstart</i>, starts and stops tasks.<div><br /></div><div>In contrast to <i>upstart</i>, <i>systemd</i> parallelizes also services which depend on each other. This makes <i>systemd</i> faster than&nbsp;<i>upstart</i> and&nbsp;SysVinit.</div>	101 101.3 edit
+< 2 commands that are useful for&nbsp;System-V (SysV)?	- init<div>- telinit</div><div>- runlevel</div><div>- sysctl</div>	101 101.3 Marked
+---
+> In which concept is <i>systemd</i> different from <i>upstart</i>?	<i>Systemd</i>, like <i>upstart</i>, starts and stops tasks and services prallel. In contrast to <i>upstart</i>, <i>systemd</i> parallelizes also services which depend on each other. This makes <i>systemd</i> faster than&nbsp;<i>upstart</i> and&nbsp;SysVinit.	101 101.3
+> 2 commands that are useful for&nbsp;System-V (SysV)?	- init<div>- telinit</div><div>- runlevel</div><div>- sysctl</div>	101 101.3
+299c299
+< <i>systemd</i>: Command to change to runlevel 3?	$ systemctl isolate runlevel3.target	101 101.3 leech
+---
+> <i>systemd</i>: Command to change to runlevel 3?	$ systemctl isolate runlevel3.target	101 101.3
+302,303c302,303
+< <i>systemd</i>: Command to reboot the system?	$ systemctl isolate reboot.target	101 101.3 leech
+< What are the equivalent of init scripts in&nbsp;<i>systemd</i>?	units	101 101.3 Marked
+---
+> <i>systemd</i>: Command to reboot the system?	$ systemctl isolate reboot.target	101 101.3
+> What are the equivalent of init scripts in&nbsp;<i>systemd</i>?	units	101 101.3
+317c317
+< Name two ways to send a SIGHUP to a program.	SIGHUP is sent to processes running when ...<div>- closing a terminal window</div><div>- $ kill -1 PID</div>	101 101.3 edit
+---
+> Name two ways to send a SIGHUP to a program.	SIGHUP is sent to processes running when ...<div>- a terminal window is closed</div><div>- you type $ kill -1 PID</div>	101 101.3
+326,329c326,329
+< Can programs listen to a SIGKILL signal?	No.	101 101.3 Marked
+< Can programs listen to a SIGTERM signal?	Yes. Programs can listen for this signal and act upon it.	101 101.3 edit
+< Can programs listen to a SIGHUP signal?	Yes. Programs can listen for this signal and act upon it.	101 101.3 edit
+< Can programs listen to a SIGINT signal?	Yes. Programs can listen for this signal and act upon it.	101 101.3 edit
+---
+> Can programs listen to a SIGKILL signal?	No.	101 101.3
+> Can programs listen to a SIGTERM signal?	Programs can listen for this signal and act upon it.	101 101.3
+> Can programs listen to a SIGHUP signal?	Programs can listen for this signal and act upon it.	101 101.3
+> Can programs listen to a SIGINT signal?	Programs can listen for this signal and act upon it.	101 101.3
+331c331
+< Why is it useful to split a directory structure into several partitions?	This prevents the overfilling of a single directory jeopardizing the stability of the entire system.	102 102.1 edit
+---
+> Why is it useful to split a directory structure into several partitions?	This prevents, e.g. that the overfilling of a single directory will jeopardize the stability of the entire system.	102 102.1
+336c336
+< How to calculate memory in a Linux system?	physical RAM + swap space = memory&nbsp;	102 102.1 Marked
+---
+> How to calculate memory in a Linux system?	physical RAM + swap space = memory&nbsp;	102 102.1
+339c339
+< What are the suggested minimum space requirements for a partition with the root-node? [2]	- 20 GB incl. contents<div>- 800 MB if contents reside on a separate partition</div>	102 102.1 Marked
+---
+> What are the suggested minimum space requirements for a partition with the root-node? [2]	- 20 GB incl. contents<div>- 800 MB if contents reside on a separate partition</div>	102 102.1
+363c363
+< Why is there a stage 1.5 in GRUB legacy?	Stage 1.5 exists because extended file systems (EFS) won't fit in the master boot record (MBR).&nbsp;<div><br /></div><div>Stage 1.5 is located in the 30Kb immediatly following the MBR. It contains file system drivers, which enable it to load stage 2 from any known location.</div>	102 102.2 edit
+---
+> Why is there a stage 1,5 in GRUB legacy?	Stage 1,5 exists due to extended file system support.	102 102.2
+365,366c365,366
+< Command to view GRUB legacy's stage 1 binary file in HEX format?	$ od -h stage1	102 102.2 Marked
+< What would be an example path to a reiserfs file system file for GRUB legacy's stage 1.5?	/boot/grub/reiserfs_stage1_5	102 102.2 Marked edit
+---
+> Command to view GRUB legacy's stage 1 binary file in HEX format?	$ od -h stage1	102 102.2
+> What would be an example path to a reiserfs file system file for GRUB legacy's stage 1,5?	/boot/grub/reiserfs_stage1_5	102 102.2
+369c369
+< What does the&nbsp;GRUB legacy prompt look like?	grub&gt;	102 102.1 edit
+---
+> How does the&nbsp;GRUB legacy prompt look like?	grub&gt;	102 102.1
+376c376
+< What is GRUB legacy's device.map used for? 	to allocate devices	102 102.1 Marked
+---
+> What is GRUB legacy's device.map used for? 	to allocate devices	102 102.1
+384,385c384,385
+< What are programs which work with shared libraries in Linux called?	dynamically linked	102 102.3 edit
+< What are programs called, which work without shared libraries, because they carry the shared libraries code in themselve?	statically linked	102 102.3 edit
+---
+> How are programs called, which work with shared libraries in Linux?	dynamically linked	102 102.3
+> How are programs called, which work without shared libraries, because they carry the shared libraries code in themselve?	statically linked	102 102.3
+395,396c395,396
+< Which file does the dynamic linker (link loader) use to find dynamically shared libraries?	/etc/ld.so.cache	102 102.3 leech
+< Command to read the contents of&nbsp;/etc/ld.so.cache (binary file)?	$ ldconfig -p | less<div><br /></div><div>From the man file:</div><div>-p = Print the lists of directories and candidate libraries stored in the current cache.</div>	102 102.3 leech
+---
+> Which file does the dynamic linker (link loader) use to find dynamically shared libraries?	/etc/ld.so.cache	102 102.3
+> Command to read the contents of&nbsp;/etc/ld.so.cache (binary file)?	$ ldconfig -p | less<div><br /></div><div>From the man file:</div><div>-p = Print the lists of directories and candidate libraries stored in the current cache.</div>	102 102.3
+398,399c398,399
+< Which is the environment variable to give the run-time shared library loader (ld.so) an extra set of directories to look for when searching for shared libraries?	LD_LIBRARY_PATH	102 102.3 Marked
+< Command to display the contents of environment variable LD_LIBRARY_PATH?	$&nbsp;echo $LD_LIBRARY_PATH	102 102.3 Marked
+---
+> Which is the environment variable to give the run-time shared library loader (ld.so) an extra set of directories to look for when searching for shared libraries?	LD_LIBRARY_PATH	102 102.3
+> Command to display the contents of environment variable LD_LIBRARY_PATH?	$&nbsp;echo $LD_LIBRARY_PATH	102 102.3
+401,402c401,402
+< What is a side effect of compiling from tarballs instead of using a package manager when installing software?	The software can not be completely uninstalled (automatically).	102 102.4
+< Which four pieces of information are contained in .deb package names?	1. name of package<div>2. version of package</div><div>3. revision-number (release) of package</div><div>4. supported architecture</div><div><br /></div><div>e.g.:&nbsp;</div><div>vobcopy_1.2.0-5_amd64.deb</div>	102 102.4 edit
+---
+> What is the&nbsp;beauty mistake of compiling form tarballs when installing software?	The software can not be completely uninstalled (automatically).	102 102.4
+> Which four information are contained in .deb package names?	1. name of package<div>2. version of package</div><div>3. revision-number (release) of package</div><div>4. supported architecture</div><div><br /></div><div>e.g.:&nbsp;</div><div>vobcopy_1.2.0-5_amd64.deb</div>	102 102.4
+407c407
+< In which file(s) in&nbsp;/var/lib/dpkg/info/ does one find a listing of all files and directories of an installed program?	In .list files.&nbsp;<div><br /></div><div>e.g.:</div><div>/var/lib/dpkg/info/zip.list</div>	102 102.4 Marked
+---
+> In which file(s) in&nbsp;/var/lib/dpkg/info/ does one find a listing of all files and directories of an installed program?	In .list files.&nbsp;<div><br /></div><div>e.g.:</div><div>/var/lib/dpkg/info/zip.list</div>	102 102.4
+431c431
+< "Command to search for a package with ""dhcp"" in its name, using&nbsp;<i>aptitude</i>?"	$ aptitude search dhcp	102 102.4 edit
+---
+> Command to search for a dhcp package with <i>aptitude</i>?	$ aptitude search dhcp	102 102.4
+435c435
+< Command to search the <i>apt</i> software package cache?	$ apt-cache search<div><br /></div><div>e.g.</div><div>$ apt-cache search firefox</div>	102 102.4 edit
+---
+> Command to search the <i>apt</i> software package cache?	$ apt-cache<div><br /></div><div>e.g.</div><div>$ apt-cache firefox</div>	102 102.4
+444c444
+< What does&nbsp;<i>rpm </i>stand for?	Red Hat Package Manager	102 102.5 edit
+---
+> Wofür steht&nbsp;<i>rpm</i>?	Red Hat Package Manager	102 102.5
+446c446
+< Which four pieces of information are contained in .rpm package names?	1. name of package<div>2. version of package</div><div>3. revision-number (release) of package</div><div>4. supported architecture</div><div><br /></div><div>e.g.:&nbsp;</div><div>bash-3.0-15.i586.rpm</div>	102 102.5 edit
+---
+> Which four information are contained in .rpm package names?	1. name of package<div>2. version of package</div><div>3. revision-number (release) of package</div><div>4. supported architecture</div><div><br /></div><div>e.g.:&nbsp;</div><div>bash-3.0-15.i586.rpm</div>	102 102.5
+451c451
+< Name and location of the systemwide&nbsp;<i>rpm</i>&nbsp;configuration file that will be overwritten in case of updates?	/usr/lib/rpm/rpmrc	102 102.5 leech
+---
+> Name and location of the systemwide&nbsp;<i>rpm</i>&nbsp;configuration file that will be overwritten in case of updates?	/usr/lib/rpm/rpmrc	102 102.5
+476c476
+< What are the two option, by which one can query the <i>rpm</i> database, called?	- package selection options<div>- query options</div>	102 102.5 Marked edit
+---
+> How are the two options called, by which one can query the <i>rpm</i> database?	- package selection options<div>- query options</div>	102 102.5
+485,486c485,486
+< Option(s) to use with&nbsp;<i>rpm</i>&nbsp;to&nbsp;list dependencies of an uninstalled package file? [2]	$ rpm -qpR &lt;packagename.rpm&gt;<div><br /></div><div>or</div><div><br /><div>$ rpm -qp --requires &lt;packagename.rpm&gt;</div></div>	102 102.5 leech
+< Option(s) to use with&nbsp;<i>rpm</i>&nbsp;to&nbsp;print a list of files contained in an uninstalled package file? [2]	$ rpm -qpl &lt;packagename.rpm&gt;<div><br /></div><div>or</div><div><br /><div>$ rpm -qp --list &lt;packagename.rpm&gt;</div></div>	102 102.5 leech
+---
+> Option(s) to use with&nbsp;<i>rpm</i>&nbsp;to&nbsp;list dependencies of an uninstalled package file? [2]	$ rpm -qpR &lt;packagename.rpm&gt;<div><br /></div><div>or</div><div><br /><div>$ rpm -qp --requires &lt;packagename.rpm&gt;</div></div>	102 102.5
+> Option(s) to use with&nbsp;<i>rpm</i>&nbsp;to&nbsp;print a list of files contained in an uninstalled package file? [2]	$ rpm -qpl &lt;packagename.rpm&gt;<div><br /></div><div>or</div><div><br /><div>$ rpm -qp --list &lt;packagename.rpm&gt;</div></div>	102 102.5
+495c495
+< What options exist for <i>rpm2cpio</i>?	none	102 102.5 edit
+---
+> Which options do exist for <i>rpm2cpio</i>?	none	102 102.5
+508c508
+< Name 4 <i>yum</i> commands, that are identical with <i>apt-get</i>.	$ yum check<br>$ yum install<br>$ yum remove<br>$ yum search	102 102.5 Marked edit
+---
+> Name 2 <i>yum</i> commands, that are identical with <i>apt-get</i>.	$ yum check<br>$ yum install<br>$ yum remove<br>$ yum search	102 102.5
+512c512
+< What does <i>yumdownloader</i> do?	<i>yumdownloader</i> allows downloading .rpm packages from the Internet.	102 102.5 edit
+---
+> What does <i>yumdownloader</i> do?	<i>yumdownloader</i> allows to download .rpm packages from the Internet.	102 102.5
+521c521
+< What is the easiest way to print the contents of $variables and $ENVIRONMENTVARIABLES?	$ echo $variable<div><br /></div><div>e.g.:&nbsp;</div><div>$ echo $BASH</div><div>/bin/bash&nbsp;</div>	103 103.1 edit
+---
+> Which is the easiest way to print contents of $variables and $ENVIRONMENTVARIABLES?	$ echo $variable<div><br /></div><div>e.g.:&nbsp;</div><div>$ echo $BASH</div><div>/bin/bash&nbsp;</div>	103 103.1
+535c535
+< Name 3 things /etc/bashrc may contain.	- settings<div>- aliases</div><div>- functions</div>	103 103.1 edit
+---
+> Name 3 things /etc/bashrc may contain.	- settings<div>- aliases</div><div>- fuctions</div>	103 103.1
+546c546
+< Command to make the custom variable x available to subshells? [2]	$ x=value<div>$ export x</div><div><br /></div><div>or</div><br /><div>$ export x=value</div><div><br /><div><br /></div><div>In both cases the subshell result will be:</div><div>$ echo $x</div><div>value</div></div>	103 103.1 edit
+---
+> Command to make the custom variable x available to subshells? [2]	$ x=value<div>$ export&nbsp;</div><div><br></div><div>or</div><br><div>$ export x=value</div><div><br><div><br></div><div>In both cases the subshell result will be:</div><div>$ echo $x</div><div>value</div></div>	103 103.1
+556c556
+< Which two positional parameters / variables contain options and arguments given to a program?	$1 and $2	103 103.1 edit
+---
+> Which two popsitional parameters / variables contain options and arguments given to a program?	$1 and $2	103 103.1
+580,581c580,581
+< How many sections does the <i>man</i> system have?	The manual is generally split into 8 or 9 numbered sections.<div><br /></div><div>e.g.:</div><div><div>1. General commands</div><div>2. System calls</div><div>3. Library functions</div><div>4. Special files</div><div>5. File formats and conventions</div><div>6. Games and screensavers</div><div>7. Miscellanea</div><div>8. System administration commands and daemons</div><div>9. Kernel routines</div></div>	103 103.1 edit
+< Command to print the <i>crontab</i> man page from the part about the <i>crontab</i> configuration file instead from the top?	$ man 5 crontab	103 103.1 Marked
+---
+> How many sections does the <i>man</i> system have?	The manual is generally split into 8 to 9 numbered sections.<div><br></div><div>e.g.:</div><div><div>1. General commands</div><div>2. System calls</div><div>3. Library functions</div><div>4. Special files</div><div>5. File formats and conventions</div><div>6. Games and screensavers</div><div>7. Miscellanea</div><div>8. System administration commands and daemons</div><div>9. Kernel routines</div></div>	103 103.1
+> Command to print the <i>crontab</i> man page from the part about the <i>crontab</i> configuration file instead from the top?	$ man 5 crontab	103 103.1
+602c602
+< Command to&nbsp;print the first 20 lines of file1.txt and file2.txt?	$ head -n 20 file1.txt file2.txt	103 103.2 Marked
+---
+> Command to&nbsp;print the first 20 lines of file1.txt and file2.txt?	$ head -n 20 file1.txt file2.txt	103 103.2
+633c633
+< What does the program name <i>od</i> stand for?	<i>od</i> stands for octal dump, although <i>od</i> allows to dump files not only in octal but also other formats as well.	103 103.2 edit
+---
+> What does the programm name <i>od</i> stand for?	<i>od</i> stands for octal dump, although <i>od</i> allows to dump files not only in octal but also other formats as well.	103 103.2
+641,642c641,642
+< Command to remove&nbsp;consecutive, duplicate lines from a textfile?	$ uniq	103 103.2 edit
+< Command to remove not consecutive duplicate lines from textfile.txt?	$ sort textfile.txt | uniq	103 103.2 edit
+---
+> Command to remove&nbsp;consecutive, duplicate lines from a textfile?	$ unique	103 103.2
+> Command to remove not consecutive duplicate lines from textfile.txt?	$ sort textfile.txt | uniqe	103 103.2
+650c650
+< Command to <i>cut</i> column 2 from file.txt, which uses the colon as delimiter?	$ cut -d: -f2 file.txt	103 103.2 edit
+---
+> Command to <i>cut</i> column 2 from file.txt, wich uses the colon as delimiter?	$ cut -d: -f2 file.txt	103 103.2
+654c654
+< Command to&nbsp;merge lines of file1.txt and file2.txt (next to each other, not concatenate)?	$ paste file1.txt file2.txt	103 103.2 edit
+---
+> Command to&nbsp;merge lines of file1.txt and file2.txt (next to each other, not concatenate)?	$ past file1.txt file2.txt	103 103.2
+668c668
+< Option to use the complement (all characters except those in the set) of SET1 in&nbsp;<i>tr</i>?	$ tr -c<div><br /></div><div>OR</div><div><br /></div><div>$ tr --complement</div><div><br /></div><div>Synopsis:</div><div>tr [OPTION]... SET1 [SET2]</div>	103 103.2 edit
+---
+> Option to&nbsp;complement the SET1 of <i>tr</i>?	$ tr -c<div><br /></div><div>OR</div><div><br /></div><div>$ tr --complement</div><div><br /></div><div>Synopsis:</div><div>tr [OPTION]... SET1 [SET2]</div>	103 103.2
+681c681
+< Control character (escaped) which represents characters with octal value NNN (1 to 3 octal digits)?	\NNN	103 103.2 Marked
+---
+> Control character (escaped) which represents characters with octal value NNN (1 to 3 octal digits)?	\NNN	103 103.2
+703c703
+< Defined name of a path which&nbsp;relates to the present working directory(pwd)?	relative path	103 103.3 Marked
+---
+> Defined name of a path which&nbsp;relates to the present working directory(pwd)?	relative path	103 103.3
+716,717c716,717
+< Command to copy all files in the current directory to /backup?	$ cp * /backup	103 103.3 edit
+< Command to copy all .txt files in current directory to /backup and display the progress?	$ cp -v *.txt /backup<div><br /></div><div>or&nbsp;</div><div><br /></div><div>$ cp --verbose *.txt /backup<br /><div><br /></div><div>--verbose</div><div>&nbsp;&nbsp;explain what is being done</div></div>	103 103.3 edit
+---
+> Command to copy all files in the current directory to /backup?	$ cp * backup	103 103.3
+> Command to copy all .txt files in current directory to /backup and display the progress?	$ cp -v *.txt backup/<div><br /></div><div>or&nbsp;</div><div><br /></div><div>$ cp --verbose *.txt backup/<br /><div><br /></div><div>--verbose</div><div>&nbsp;&nbsp;explain what is being done</div></div>	103 103.3
+747c747
+< Command to create a 0 byte file with the creation date January 1st?	$ touch -t 0101 FILE<div><br /></div><div>Sets a timestamp.</div>	103 103.3 Marked
+---
+> Command to create a 0 byte file with the creation date January 1st?	$ touch -t 0101 FILE<div><br /></div><div>Sets a timestamp.</div>	103 103.3
+750c750
+< Command to create three 0 byte files, file1, file2, file3?	$ touch file1 file2 file3	103 103.3 edit
+---
+> Command to create 3 0 byte files, file1, file2, file3?	$ touch file1 file2 file3	103 103.3
+765c765
+< Command to <i>find</i> fiil, but not fail and foil?	$ find f[!ao]il	103 103.3 edit
+---
+> Command to <i>find</i> fiil, but not fail and foil?	$ find f!ao]il	103 103.3
+769c769
+< Name one way to <i>find</i> the file 'f\il' using wildcards?	$ find f\\il<div><br /></div><div>or</div><div><br /></div><div>$ find ?\\*</div><div><br /></div><div>or ...</div>	103 103.3 Marked
+---
+> Name one way to <i>find</i> the file 'f\il' using wildcards?	$ find f\\il<div><br /></div><div>or</div><div><br /></div><div>$ find ?\\*</div><div><br /></div><div>or ...</div>	103 103.3
+772,774c772,774
+< Options to&nbsp;extract files from a <i>tar</i> archive? [2]	$ tar -x<div><br /></div><div>or&nbsp;</div><div><br /><div>$ tar&nbsp;--extract</div><div><br /></div><div>or</div><div><br /></div><div>$ tar&nbsp;--get</div></div>	103 103.3 edit
+< Opions to use to compress&nbsp;<i>tar </i>files with <i>gzip</i>? [2]	$ gzip -z<div><br /></div><div>or<br /><div><br /></div><div>$ gzip&nbsp;--gzip</div></div>	103 103.3 Marked
+< Options to use to uncompress&nbsp;<i>tar&nbsp;</i>files with <i>gzip</i>? [2]	<div>$ gzip --gunzip</div><div><br /></div><div>or</div><div><br /></div><div>$ gzip&nbsp;--ungzip</div>	103 103.3 Marked edit
+---
+> Opions to&nbsp;extract files from a <i>tar</i> archive? [2]	$ tar -x<div><br /></div><div>or&nbsp;</div><div><br /><div>$ tar&nbsp;--extract</div><div><br /></div><div>or</div><div><br /></div><div>$ tar&nbsp;--get</div></div>	103 103.3
+> Opions to use to compress&nbsp;<i>tar </i>files with <i>gzip</i>? [2]	$ gzip -z<div><br /></div><div>or<br /><div><br /></div><div>$ gzip&nbsp;--gzip</div></div>	103 103.3
+> Opions to use to uncompress&nbsp;<i>tar&nbsp;</i>files with <i>gzip</i>? [2]	<div>$ gzip --gunzip</div><div><br /></div><div>or</div><div><br /></div><div>$ gzip&nbsp;--ungzip</div>	103 103.3
+783c783
+< Which <i>tar</i> option is an exception to the rule that the order of options does not matter?	For the -f or --file option, as it needs another argument.<div><br /></div><div>e.g.:&nbsp;</div><div>$ tar -cvf archive.tar /Downloads/*</div>	103 103.3
+---
+> Which <i>tar</i> option is an exception to the rule that the order of options does not matter?	For the -f or --file option, as it needs another argument.<div><br /></div><div>e.g.:&nbsp;</div><div>$ tar -cvf archive.tar /Downloads/*</div>	103 103.3 marked
+786c786
+< Command to view a verbose listing of the contents of archive.tar.bz2 with less?	$ tar -tvjf archive.tar.bz2 | less	103 103.3
+---
+> Command to view a verbose listing of the contents of archive.tar.bz2 with less?	$ tar -tvjf archive.tar.bz2 | less	103 103.3 marked
+792c792
+< Command to compress (zip) file.txt?	$ gzip file.txt<div><br /></div><div>Note: Original file will be changed.</div>	103 103.3 edit
+---
+> Command to compress file.txt?	$ gzip file.txt<div><br /></div><div>Explanation: Original file will be changed.</div>	103 103.3
+797c797
+< Do <i>gzip</i> and <i>bzip2</i> delete/overwrite original files by default?	<div>No.</div><div><br /></div>Explanation: <i>gzip</i> does not keep original files, in contrast to .bzip2 and bunzip2 will by default not overwrite existing files.	103 103.3 Marked
+---
+> Do <i>gzip</i> and <i>bzip2</i> delete/overwrite original files by default?	<div>No.</div><div><br /></div>Explanation: <i>gzip</i> does not keep original files, in contrast to .bzip2 and bunzip2 will by default not overwrite existing files.	103 103.3
+816c816
+< Option to have&nbsp;<i>dd</i>&nbsp;write to file.txt instead of stdout?	of=file.txt	103 103.3 Marked
+---
+> Option to have&nbsp;<i>dd</i>&nbsp;write to file.txt instead of stdout?	of=file.txt	103 103.3
+818c818
+< Option to define block size used by&nbsp;<i>dd</i>?	ibs=BYTES<div><br /><div>Explanation: Reads up to BYTES bytes at a time. Default is 512 bytes.</div></div>	103 103.3 Marked
+---
+> Option to define block size used by&nbsp;<i>dd</i>?	ibs=BYTES<div><br /><div>Explanation: Reads up to BYTES bytes at a time. Default is 512 bytes.</div></div>	103 103.3
+830c830
+< What is standard output (stdout)?	Standard output is data printed by a program.	103 103.4 Marked
+---
+> What is standard output (stdout)?	Standard output is data printed by a program.	103 103.4
+835c835
+< What happens if one redirects standard output to a file that already exists?	The file will be overwritten.	103 103.4 edit
+---
+> What happens if one redirects to file, that already exists?	The file will be overwritten.	103 103.4
+849c849
+< What is the name of the process with PID 0 in normal user-mode?	In normal user-mode there is no process with PID 0.	103 103.5 edit
+---
+> Wat is the name of the process with PID 0 in normal user-mode?	In normal user-mode there is no process with PID 0.	103 103.5
+871c871
+< Name 4 pieces of general information which are displayed by <i>top</i>.&nbsp;	<div>- time</div>- uptime<div>- registered users</div><div>- load average</div>	103 103.5 edit
+---
+> Name 4 general information which are displayed by <i>top</i>.&nbsp;	<div>- time</div>- uptime<div>- registered users</div><div>- load average</div>	103 103.5
+881c881
+< Command to constantly write the <i>top</i> output (only active processes) to top.txt?	$ top -ib &gt; top.txt	103 103.5 leech
+---
+> Command to constantly write the <i>top</i> output (only active processes) to top.txt?	$ top -ib &gt; top.txt	103 103.5
+959c959
+< Command to change the <i>nice</i> value of&nbsp;a running process&nbsp;to 14?	"$ renice 14 PID<br /><div><br /></div><div><img src=""renice (2).png"" /></div>"	103 103.6 edit
+---
+> Command to change the <i>nice</i> value of&nbsp;a running process&nbsp;to 14?	"$ renice -14 PID<br /><div><br /></div><div><img src=""renice (2).png"" /></div>"	103 103.6
+997c997
+< Command to print all entries (lines) containing 'Jimmy',&nbsp;'jimmy',&nbsp;'Jimmi',&nbsp;'jimmi' and 'Jonny'&nbsp;in address.list?	$ grep -i j*[iy] address.list<div><br /></div><div>or</div><div><br /></div><div>$ grep -i j...[iy] address.list</div><div><br /></div><div>or</div><div><br /></div><div>$ grep -i j.[mn].[iy] address.list</div><div><br /></div><div>...</div>	103 103.7 edit
+---
+> Command to print all entries (lines) containing 'Jimmy',&nbsp;'jimmy',&nbsp;'Jimmi',&nbsp;'jimmi' and 'Jonny'&nbsp;in adress.list?	$ grep -i j*[iy] address.list<div><br /></div><div>or</div><div><br /></div><div>$ grep -i j...[iy] address.list</div><div><br /></div><div>or</div><div><br /></div><div>$ grep -i j.[mn].[iy] address.list</div><div><br /></div><div>...</div>	103 103.7
+1005c1005
+< Regular expression&nbsp;for&nbsp;<i>grep&nbsp;</i>to&nbsp;match all words ending in numbers (e.g. word9, word12, word964, etc.) in file.txt?	$ grep '\&lt;word[1-9]*\&gt; file.txt	103 103.7 Marked
+---
+> Regular expression&nbsp;for&nbsp;<i>grep&nbsp;</i>to&nbsp;match all words ending in numbers (e.g. word9, word12, word964, etc.) in file.txt?	$ grep '\&lt;word[1-9]*\&gt; file.txt	103 103.7
+1010c1010
+< Regular expression&nbsp;for&nbsp;<i>grep&nbsp;</i>to&nbsp;match all lines containing minimum 2 times the letter 'x' (with no maximum for x given) in file.txt?	$ grep 'x\{2,\}' file.txt	103 103.7 edit
+---
+> Regular expression&nbsp;for&nbsp;<i>grep&nbsp;</i>to&nbsp;match all lines containing minimum 2 times the letter 'x' (with no maximum for x given) in file.txt?	$ grep 'x\{1,\}' file.txt	103 103.7
+1024,1025c1024,1025
+< Command to use&nbsp;<i>sed</i>&nbsp;to delete all lines not starting with a '#' (comments) from file.txt?	$ sed -i '/^#/!d' file.txt<div><br /></div><div>The -i argument, in place, means sed will modify the original file.&nbsp;</div>	103 103.7
+< Command to use&nbsp;<i>sed</i>&nbsp;to delete all lines but lines 13 to 26 from file.txt?	$ sed -i '13,26!d' file.txt	103 103.7
+---
+> Command to use&nbsp;<i>sed</i>&nbsp;to delete all lines not starting with a '#' (comments) from file.txt?	$ sed -i '/^#/!d' file.txt	103 103.7
+> Command to use&nbsp;<i>sed</i>&nbsp;to delete all lines but lines 13 to 26 from file.txt?&nbsp;	$ sed -i '13,26!d' file.txt	103 103.7
+1037c1037
+< Key to press to enter&nbsp;<i>vi</i>&nbsp;insert mode at beginning of the current line?	I<div>(capital i)</div>	103 103.8 edit
+---
+> Key to press to enter&nbsp;<i>vi</i>&nbsp;insert mode at beginning of the current line?	I	103 103.8
+1044c1044
+< <i>Vi</i>&nbsp;command to save the already existing, open file and quit/exit&nbsp;<i>vi</i>? [3]	:wq<div><br /></div><div>or</div><div><br /></div><div>:x</div><div><br /></div><div>or</div><div><br /></div><div>ZZ</div>	103 103.8 Marked
+---
+> <i>Vi</i>&nbsp;command to save the already existing, open file and quit/exit&nbsp;<i>vi</i>? [3]	:wq<div><br /></div><div>or</div><div><br /></div><div>:x</div><div><br /></div><div>or</div><div><br /></div><div>ZZ</div>	103 103.8
+1052c1052
+< <i>Vi&nbsp;</i>command&nbsp;(normal mode)&nbsp;to&nbsp;move the cursor right?	l<div>(lowercase L)</div>	103 103.8 edit
+---
+> <i>Vi&nbsp;</i>command&nbsp;(normal mode)&nbsp;to&nbsp;move the cursor right?	l	103 103.8
+1078c1078
+< Name two common applications to&nbsp;display and/or manipulate a disk partition table.	1. fdisk<div>2. cfdisk</div>	104 104.1 edit
+---
+> Name two common applications to&nbsp;display and/or manipulate a disk partition table.	1. cfdisk<div>2. fdisk</div>	104 104.1
+1097c1097
+< The organization of the partition table in the MBR limits the maximum addressable storage space of a disk to?	<div>&lt;= 2 TB</div>	104 104.1 edit
+---
+> The organization of the partition table in the MBR limits the maximum addressable storage space of a disk to?	<div>&lt;= 4 TB</div>	104 104.1
+1106c1106
+< <i>mkfs</i> is simply a front-end for various filesystem builders (mkfs.fstype). Where are the&nbsp;filesystem builders located?	"The&nbsp;filesystem builders and their&nbsp;hard- and softlinks&nbsp;are located in /sbin/<div><br /></div><div><img src=""sbin-mkfs.png"" /></div>"	104 104.1 Marked
+---
+> <i>mkfs</i> is simply a front-end for various filesystem builders (mkfs.fstype). Where are the&nbsp;filesystem builders located?	"The&nbsp;filesystem builders and their&nbsp;hard- and softlinks&nbsp;are located in /sbin/<div><br /></div><div><img src=""sbin-mkfs.png"" /></div>"	104 104.1
+1108c1108
+< <i>mke2fs</i>&nbsp;is simply a front-end for various the ext2. ext3, ext4 filesystem builders (mkfs.ext?). Where are the&nbsp;filesystem builders located?	"The ext-file system builders and their links&nbsp;are located in /sbin/<div><br /></div><div><img src=""sbin-mkfs-ext.png"" /></div>"	104 104.1 Marked
+---
+> <i>mke2fs</i>&nbsp;is simply a front-end for various the ext2. ext3, ext4 filesystem builders (mkfs.ext?). Where are the&nbsp;filesystem builders located?	"The ext-file system builders and their links&nbsp;are located in /sbin/<div><br /></div><div><img src=""sbin-mkfs-ext.png"" /></div>"	104 104.1
+1111c1111
+< Option to use with <i>mkfs / mke2fs</i>&nbsp;to&nbsp;create the filesystem with an ext3 journal?	$ mkfs -j<div><br /></div><div>e.g.:</div><div>$ mkfs -t ext2 -j /dev/sdb1</div>	104 104.1 Marked
+---
+> Option to use with <i>mkfs / mke2fs</i>&nbsp;to&nbsp;create the filesystem with an ext3 journal?	$ mkfs -j<div><br /></div><div>e.g.:</div><div>$ mkfs -t ext2 -j /dev/sdb1</div>	104 104.1
+1120c1120
+< Which command is actually called when running the command 'mkfs -t ext3 /dev/sdb1'?	$ mke2fs	104 104.1 edit
+---
+> Wich command is actually called when running the command 'mkfs -t ext3 /dev/sdb1'?	$ mke2fs	104 104.1
+1135c1135
+< Name 2 commands to check if a swap partition or file is active?&nbsp;	1. $ cat /proc/swaps<div>2. $ free&nbsp;</div><div><br /></div><div>Explanation:</div><div><i>free</i> checks /proc/meminfo</div>	104 104.1 edit
+---
+> Name 2 commands to check if a swap partition or file is active?&nbsp;	1. $ cat /pro/swaps<div>2. $ free&nbsp;</div><div><br /></div><div>Explanation:</div><div><i>free</i> checks /proc/meminfo</div>	104 104.1
+1162c1162
+< <i>tune2fs</i>&nbsp;option to&nbsp;set the time the filesystem was last checked using <i>fsck</i>?	$ tune2fs -T&nbsp;YYYYMMDD[HH[MM[SS]]]<div><br /></div><div>e.g.:</div><div>$ tune2fs -T 20170131</div><div><br /></div><div>or</div><div><br /></div><div>$ tune2fs -T 20170131041530</div>	104 104.2 Marked
+---
+> <i>tune2fs</i>&nbsp;option to&nbsp;set the time the filesystem was last checked using <i>fsck</i>?	$ tune2fs -T&nbsp;YYYYMMDD[HH[MM[SS]]]<div><br /></div><div>e.g.:</div><div>$ tune2fs -T 20170131</div><div><br /></div><div>or</div><div><br /></div><div>$ tune2fs -T 20170131041530</div>	104 104.2
+1184c1184
+< Command to print the amount of disk space used for all directories in the current working directory in a human-readable format, including a total of all arguments?	$&nbsp;du -sch *<div><br /></div><div>Explanation:</div><div>-s display only a total for each argument (do not enter subdirectories)</div><div>-c produce a grand total</div><div>-h print sizes in human readable format</div>	104 104.2 edit
+---
+> Command to print the amount of disk space used for all directories in the current working directory in a human-readable format, including a total of all arguments?	$&nbsp;du -sch *	104 104.2
+1200c1200
+< Option to use with&nbsp;<i>mount</i>&nbsp;to use specified mount options (a comma-separated list)?	$ mount -o<div><br /></div><div>or</div><div><br /></div><div>$ mount --options</div><div><br /></div><div>e.g.:&nbsp;</div><div>$ mount /dev/sdb1 -o&nbsp;noatime,nodev,nosuid</div>	104 104.3 edit
+---
+> Option to use with&nbsp;<i>mount</i>&nbsp;to use specified mount options (a comma-separated list)?	$ mount -o<div><br /></div><div>or</div><div><br /></div><div>$ moun --options</div><div><br /></div><div>e.g.:&nbsp;</div><div>$ mount /dev/sdb1 -o&nbsp;noatime,nodev,nosuid</div>	104 104.3
+1219c1219
+< What does the number 1 stand for, in the 6th column of /etc/fstab?	Will be checked preferably by <i>fsck</i>.	104 104.3 Marked
+---
+> What does the number 1 stand for, in the 6th column of /etc/fstab?	Will be checked preferably by <i>fsck</i>.	104 104.3
+1230c1230
+< Filesystem independent mount option&nbsp;(for use with&nbsp;<i>mount</i>&nbsp;or in /etc/fstab)&nbsp;to mount the filesystem/device read-only?	<div>-r</div><div><br /></div><div>or</div><div><br /></div><div>--read-only</div><div><br /></div><div>or</div><div><br /></div>ro	104 104.3 edit
+---
+> Filesystem independent mount option&nbsp;(for use with&nbsp;<i>mount</i>&nbsp;or in /etc/fstab)&nbsp;to mount the filesystem/device read-only?	ro	104 104.3
+1238c1238
+< Which file lists currently mounted filesystems?	/etc/mtab	104 104.3 edit
+---
+> Which file liste currently mounted filesystems?	/etc/mtab	104 104.3
+1269c1269
+< Option to use with&nbsp;<i>quotaon</i>&nbsp;to&nbsp;manipulate group quotas (default)?	$ quotaon -g<div><br /></div><div>or</div><div><br /></div><div>$ quotaon --group</div>	104 104.4 Marked
+---
+> Option to use with&nbsp;<i>quotaon</i>&nbsp;to&nbsp;manipulate group quotas (default)?	$ quotaon -g<div><br /></div><div>or</div><div><br /></div><div>$ quotaon --group</div>	104 104.4
+1280c1280
+< Command to&nbsp;print a summary of the disc usage and quotas for (the specified) filesystems?	$ repquota	104 104.4 Marked
+---
+> Command to&nbsp;print a summary of the disc usage and quotas for (the specified) filesystems?	$ repquota	104 104.4
+1288c1288
+< Option to use with&nbsp;<i>quotaoff</i>&nbsp;to&nbsp;manipulate group quotas (default)?	$ quotaoff -g<div><br /></div><div>or</div><div><br /></div><div>$ quotaoff --group</div>	104 104.4 Marked
+---
+> Option to use with&nbsp;<i>quotaoff</i>&nbsp;to&nbsp;manipulate group quotas (default)?	$ quotaoff -g<div><br /></div><div>or</div><div><br /></div><div>$ quotaoff --group</div>	104 104.4
+1304c1304
+< Into which groups are the 9 permission bits divided?	"<div>- 3 user permission bits</div><div>- 3 group permission bits</div><div>- 3 world permission bits</div><div><br /></div><div><img src=""permissions.png"" /></div>"	104 104.5 edit
+---
+> Into which groups are the 9 permission bits divided?	"<div>- 3 user persmission bits</div><div>- 3 group persmission bits</div><div>- 3 world persmission bits</div><div><br /></div><div><img src=""permissions.png"" /></div>"	104 104.5
+1310c1310
+< Command to change the permissions of all files in /scripts to 755 and report verbosely on changes only?	$ chmod -Rc 755 /scripts	104 104.5
+---
+> Command to change the permissions of all files in scripts/ to 755 and report verbosely on changes only?	$ chmod -Rc 755 /scripts	104 104.5
+1321c1321
+< Command to&nbsp;to set SUID on file.txt the numerical way?	$ chmod 4XXX file.txt<div><br /></div><div>e.g.:</div><div>$ chmod 4777 file.txt =&nbsp;-rwsrwxrwx</div>	104 104.5 Marked
+---
+> Command to&nbsp;to set SUID on file.txt the numerical way?	$ chmod 4XXX file.txt<div><br /></div><div>e.g.:</div><div>$ chmod 4777 file.txt =&nbsp;-rwsrwxrwx</div>	104 104.5
+1329,1330c1329,1330
+< Command to allow every user to run script.sh as root (assumming the file owner is root)?	$ chmod 4755 script.sh	104 104.5 edit
+< Command to change the file mode of script.sh to rwsr-xr-x in ocatal notation?	$ chmod 755 script.sh	104 104.5 Marked
+---
+> Command to allow every user to run script.sh as root?	$ chmod 4755 script.sh	104 104.5
+> Command to change the file mode of script.sh to rwsr-xr-x in ocatal notation?	$ chmod 755 script.sh	104 104.5
+1337c1337
+< Command to use&nbsp;<i>chown</i> to&nbsp;set the user ownership of /files/user1 recursively&nbsp;to root?	$ chown root /files/user1 -R	104 104.5 editMarked
+---
+> Command to use&nbsp;<i>chown</i> to&nbsp;set the user ownership of /files/user1 recursively&nbsp;to root?	$ chmod root /files/user1 -R	104 104.5
+1348c1348
+< When creating a new file, the umask will be subtracted from which octal number?	0666<div><br /></div><div>These are the default permissions for a file. 0777 are the default permissions for a directory.<div><br /></div><div>e.g.:</div><div>&nbsp;0666</div><div>-0022</div><div>====</div><div>&nbsp;0644&nbsp;(permissions)</div></div>	104 104.5
+---
+> When creating a new file, the umask will be subtracted from which octal number?	0666<div><br /></div><div>e.g.:</div><div>&nbsp;0666</div><div>-0022</div><div>====</div><div>&nbsp;0644&nbsp;(permissions)</div>	104 104.5
+1380c1380
+< According to the&nbsp;Filesystem Hierarchy Standard (FHS)&nbsp;what is considered unshareable data?	Unshareable data and can not be shared or used together. For example data in /etc and /boot.	104 104.7 Marked
+---
+> According to the&nbsp;Filesystem Hierarchy Standard (FHS)&nbsp;what is considered unshareable data?	Unshareable data and can not be shared or used together. For example data in /etc and /boot.	104 104.7
+1382c1382
+< According to the&nbsp;Filesystem Hierarchy Standard (FHS)&nbsp;where can variable data be found?	Variable data resides in directories like /home and /var.	104 104.7 Marked edit
+---
+> According to the&nbsp;Filesystem Hierarchy Standard (FHS)&nbsp;where can variable data be found?	Variable data resides in directories like /home and /var/mail.	104 104.7
+1397c1397
+< According to the&nbsp;Filesystem Hierarchy Standard (FHS) which directory contains the second major section of the filesystem?	/usr	104 104.7 Marked
+---
+> According to the&nbsp;Filesystem Hierarchy Standard (FHS) which directory contains the second major section of the filesystem?	/usr	104 104.7
+1403c1403
+< According to the&nbsp;Filesystem Hierarchy Standard (FHS) which directory contains&nbsp;the variable data for the <i>cron</i> and <i>at</i> programs?	/var/spool/cron	104 104.7 Marked
+---
+> According to the&nbsp;Filesystem Hierarchy Standard (FHS) which directory contains&nbsp;the variable data for the <i>cron</i> and <i>at</i> programs?	/var/spool/cron	104 104.7
+1424,1425c1424,1425
+< Command to list all files belonging to user1 in /?	$ find / -user user1	104 104.7 edit
+< Command to <i>find</i> all files in / with a SUID bit?	$ find / -perm /4000<div><br /></div><div>or&nbsp;</div><div><br /></div><div>$find / -perm /u=s</div>	104 104.7 debian edit
+---
+> Command to list all files of user1 in /?	$ find / -user user1	104 104.7
+> Command to <i>find</i> all files in / with a SUID bit?	$ find / -perm +4000	104 104.7
+1428c1428
+< Command to update the database for <i>locate </i>or<i>&nbsp;mlocate</i>?	$ updatedb	104 104.7 edit
+---
+> Command to update a database for <i>mlocate</i>?	$ updatedb	104 104.7
+1440c1440
+< HAL has been merged into which program?	HAL is now deprecated as it is being merged into <i>udev</i>.	101 101.1 edit
+---
+> HAL has been merged into wich program?	HAL is now deprecated as it is being merged into <i>udev</i>.	101 101.1
+1451,1452c1451,1452
+< What does the SCSI naming system look like for hard drives?	/dev/sd0, /dev/sd1, ...etc	101 101.1 edit
+< What does the SCSI naming system look like for tapes?	/dev/st0, /dev/st1, ...etc	101 101.1 edit
+---
+> How does the SCSI naming system look like for hard drives?	/dev/sd0, /dev/sd1, ...etc	101 101.1
+> How does the SCSI naming system look like for tapes?	/dev/st0, /dev/st1, ...etc	101 101.1
+1464c1464
+< Where is bios&nbsp;firmware installed?	On the motherboard.	101 101.2 edit
+---
+> Where is firmware installed?	On the motherboard.	101 101.2
+1493c1493
+< Command to add two shell variables, 'a' and 'b' and put the sum in another shell variable, 'c'?	"$ let c=$a+$b<div><br /></div><div><img src=""multiply-shell-variables.png"" /></div>"	105 105.1 edit
+---
+> Command to calculate the multiplication of the shell variables 'a' and 'b' in another shell variable, 'c'?	"$ let c=$a+$b<div><br /></div><div><img src=""multiply-shell-variables.png"" /></div>"	105 105.1
+1506c1506
+< Characters to help interpret multi-line commands in functions as one command?	"<div>{}</div><div><br /></div><div>e.g.:</div><div>function add ()</div><div>{</div><div>&nbsp; let sum=$1+$2</div><div>&nbsp; echo -e ""the sum is: $sum""</div><div>}</div><div><br /></div><div>$ add 5 6</div><div>the sum is: 11</div>"	105 105.1 edit
+---
+> Characters to help interpret multi-line commands in functions as one command?	<div>{}</div><div><br /></div><div>e.g.:</div><div>function add ()</div><div>{</div><div>&nbsp; let sum=$1+$2</div><div>&nbsp; echo -e 'the sum is: $sum'</div><div>}</div><div><br /></div><div>$ add 5 6</div><div>the sum is: 11</div>	105 105.1
+1521c1521
+< Names of system wide (global) configuration files, which are valid for all users never begin with which character?	.<div><br /></div><div>e.g.:</div><div>/etc/bash.bashrc</div>	105 105.1 edit
+---
+> Names of system wide (global) configuration filesconfiguration files, which are valid for all users, never begin with which character?	.<div><br /></div><div>e.g.:</div><div>/etc/bash.bashrc</div>	105 105.1
+1529c1529
+< Do changes to&nbsp;/etc/bash.bashrc require logging out and back in again to take effect?	No.<div><br /></div><div>Explanation:</div><div>/etc/bash.bashrc is read with every start of every shell.</div>	105 105.1 edit
+---
+> Do changes to&nbsp;/etc/bash.bashrc require loggin out and back in again to take effect?	No.<div><br /></div><div>Explanation:</div><div>/etc/bash.bashrc is read with every start of every shell.</div>	105 105.1
+1557c1557
+< Directory to place system wide scripts, which require administrative&nbsp;privileges?	/usr/sbin	105 105.2 edit
+---
+> Directory to place system wide scripts, which do require administrative&nbsp;privileges?	/usr/sbin	105 105.2
+1559c1559
+< Directory to place temporary data e.g. from scripts running in&nbsp;subordinate shells, which is needed by parent shells?	/tmp/	105 105.2 edit
+---
+> Directory to place temporary data e.g. from scripts running in&nbsp;subordinate shells, which is needed by partent shells?	/tmp/	105 105.2
+1613,1614c1613,1614
+< What is the classic form of command substitution use to&nbsp;generate command-line text?	backquotes (backticks) ` ... `<div><br /></div><div>e.g.:&nbsp;</div><div>$ rm `ls *.txt`</div>	105 105.2 Marked edit
+< What are the syntaxes of command substitution, e.g. for <i>rm</i> with the output of '<i>ls *.txt</i>' as argument? [2]	1. $ rm `ls *.txt`<div>2. $ rm $(ls *.txt)</div>	105 105.2 Marked
+---
+> What does the classic form of command substitution use to&nbsp;generate command-line text?	backquotes (backticks) ` ... `<div><br /></div><div>e.g.:&nbsp;</div><div>$ rm `ls *.txt`</div>	105 105.2
+> What are the syntaxes of command substitution, e.g. for <i>rm</i> with the output of '<i>ls *.txt</i>' as argument? [2]	1. $ rm `ls *.txt`<div>2. $ rm $(ls *.txt)</div>	105 105.2
+1636c1636
+< "Command line to&nbsp;<i>echo</i>&nbsp;""6 / 2 = 3"" using the variables a=6, b=2, c=a/b."	"$ echo $a / $b = $c<div><br /></div><div>e.g.:</div><div><img src=""divide.png"" /></div>"	105 105.2 edit
+---
+> Command line to&nbsp;<i>echo</i>&nbsp;how many time $b is contained in $a as $c (devide $a by $b)?	"$ echo $a / $b = $c<div><br /></div><div>e.g.:</div><div><img src=""divide.png"" /></div>"	105 105.2
+1642,1643c1642,1643
+< Is using the proper exit code a requirement for command line programs used in bash?	No, it is not a requirement nor, is it enforced by the shell.&nbsp;<div>What an exit code means is entirely up to the developers of the program.</div>	105 105.2 edit
+< Which statement is a good alternative to a multilevel <i>if</i>-<i>then</i>-<i>else</i>-<i>fi</i> statement?	case<div><br /></div><div>Explanation:</div><div>Nested <i>if</i> statements are nice, but as soon as one is confronted with a couple of different possible actions to take, they tend to get confusing.&nbsp;</div><div>For the more complex conditionals, it is suggested to use the <i>case</i> syntax.</div>	105 105.2 edit
+---
+> Is using the proper exist status code a requirement?	No, it is not a requirement nor enforced by the shell.&nbsp;<div>What an exit code means is entirely up to the developers of the program.</div>	105 105.2
+> Which statement is a good alternative to a multilevel <i>if</i>-<i>then</i>-<i>else</i>-<i>fi</i> statement?	case<div><br /></div><div>Explanation:</div><div>Nested <i>if</i> statements are nice, but as soon as one is confronted with a couple of different possible actions to take, they tend to confuse.&nbsp;</div><div>For the more complex conditionals, it is suggested to use the <i>case</i> syntax.</div>	105 105.2
+1649c1649
+< Command to&nbsp;execute an external script&nbsp;from within a script (and replacing the current process image with the new process image)?	$ exec	105 105.2 Marked
+---
+> Command to&nbsp;execute an external script&nbsp;from within a script (and replacing the current process image with the new process image)?	$ exec	105 105.2
+1663c1663
+< Example commands for&nbsp;Data Definition Language (DDL)? [3]	- CREATE<div>- ALTER</div><div>- DROP</div>	105 105.3 edit
+---
+> Example commands for&nbsp;Data Definition Language (DML)? [3]	- CREATE<div>- ALTER</div><div>- DROP</div>	105 105.3
+1668c1668
+< CREATE, ALTER, and DROP are commands of which language?	Data Definition Language (DDL)	105 105.3 edit
+---
+> CREATE, ALTER, and DROP are commands of which language?	Data Definition Language (DML)	105 105.3
+1671c1671
+< Which are the groups of SQL languages? [4]	- Data Query Language (DQL)<div>- Data Manipulation Language (DML)</div><div>- Data Definition Language (DDL)</div><div>- Data Control Language (DCL)</div>	105 105.3 edit
+---
+> Which are the groups of SQL languages? [4]	- Data Query Language (DQL)<div>- Data Manipulation Language (DML)</div><div>- Data Definition Language (DML)</div><div>- Data Control Language (DCL)</div>	105 105.3
+1676c1676
+< Command line to connect to the <i>mysql</i> server at localhost, with the user 'root' and an unspecified password?	"$ mysql --user=root -p -h localhost<div><br /></div><div>e.g.:</div><div><img src=""mysql-login.png"" /></div>"	105 105.3 leech
+---
+> Command line to connect to the <i>mysql</i> server at localhost, with the user 'root' and an unspecified password?	"$ mysql --user=root -p -h localhost<div><br /></div><div>e.g.:</div><div><img src=""mysql-login.png"" /></div>"	105 105.3
+1686c1686
+< Is the&nbsp;<i>MySQL command case-sensitive?</i>	No.	105 105.3 edit
+---
+> Ist the&nbsp;<i>MySQL command case-sensitive?</i>	No.	105 105.3
+1693c1693
+< Name 5 <i>MySQL</i> date and time data types.	- DATE<div>- TIME</div><div>- DATETIME</div><div>- TIMESTAMP<div>- YEAR<div><br /></div></div></div>	105 105.3 edit
+---
+> Name 4 <i>MySQL</i> date and time data types.	- DATE<div>- TIME</div><div>- DATETIME</div><div>- TIMESTAMP<div>- YEAR<div><br /></div></div></div>	105 105.3
+1706c1706
+< Does <i>MySQL</i> allow entering multiple commands on a single line?	yes<div><br /></div><div>e.g.:</div><div>mysql&gt; SELECT VERSION(); SELECT NOW();</div><div><br /></div><div>Explanation:</div><div>Important is the&nbsp;terminating semicolon after each statement.</div>	105 105.3 edit
+---
+> Does <i>MySQL</i> allow to&nbsp;enter multiple command on a single line?	yes<div><br /></div><div>e.g.:</div><div>mysql&gt; SELECT VERSION(); SELECT NOW();</div><div><br /></div><div>Explanation:</div><div>Important is the&nbsp;terminating semicolon after each statement.</div>	105 105.3
+1713c1713
+< <i>MySQL</i>&nbsp;command to&nbsp;change the column name 'firs_name' to 'first_name' on the 'phone_numbers' table?	"mysql&gt; ALTER TABLE phone_numbers CHANGE firs_name first_name VARCHAR(128);<div><br /></div><div>e.g.:</div><div><img src=""alter-table_2.png"" /></div>"	105 105.3 leech
+---
+> <i>MySQL</i>&nbsp;command to&nbsp;change the column name 'firs_name' to 'first_name' on the 'phone_numbers' table?	"mysql&gt; ALTER TABLE phone_numbers CHANGE firs_name first_name VARCHAR(128);<div><br /></div><div>e.g.:</div><div><img src=""alter-table_2.png"" /></div>"	105 105.3
+1724c1724
+< <i>MySQL</i> command to print all rows of table 'phone_numbers' but limit the amount of results to 2?	"<div>mysql&gt; SELECT * FROM phone_numbers LIMIT 2;</div><div><br /></div><div>e.g.:</div><div><img src=""mysql-limit_1.png"" /></div>"	105 105.3 leech
+---
+> <i>MySQL</i> command to print all rows of table 'phone_numbers' but limit the amount of results to 2?	"<div>mysql&gt; SELECT * FROM phone_numbers LIMIT 2;</div><div><br /></div><div>e.g.:</div><div><img src=""mysql-limit_1.png"" /></div>"	105 105.3
